@@ -10,12 +10,12 @@ class Pessoa {
       console.error('Erro em select:', error);
       throw error;
     }
-  }
+  }  
 
   static async insert(data) {
     try {
       const connect = await db.connect();
-      const sql = "";
+      const sql = "INSERT INTO pessoas (nome, idade, uf) VALUES ('John Doe', 25, 'NY')";
       const values = [data.nome, data.idade, data.uf];
       return await connect.query(sql, values);
     } catch (error) {

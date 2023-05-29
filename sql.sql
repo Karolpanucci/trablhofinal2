@@ -17,3 +17,4 @@ VALUES
     ('Olivia Thompson', 22, 'GA'),
     ('James Martinez', 33, 'MI'),
     ('Emma Taylor', 29, 'NC');
+ 

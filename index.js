@@ -22,11 +22,11 @@ app.get('/pessoas', async function(req, res){
   }
 });
 
-app.post('/pessoas', async function(req, res){
+app.post('/pessoas', async function(req, res){ 
   try {
     var pessoas = await Pessoa.insert();
     res.json(pessoas.rows);
-  } catch (error) {
+  } catch (error) {     
     console.error('Erro ao buscar pessoas:', error);
     res.status(500).json({ error: 'Ocorreu um erro ao buscar pessoas' });
   }

@@ -12,7 +12,7 @@ let connect = async function () {
 
     global.connection = pool;
     return Promise.resolve(pool);
-  } catch (error) {
+  } catch (error) { 
     console.error('Erro ao estabelecer a conexão:', error);
     throw error;
   }
